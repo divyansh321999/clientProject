@@ -1,0 +1,46 @@
+.todoCard{
+    background-color: white;
+    padding: 10px;
+    flex: 1 1 calc(25% - 10px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.homeHead{
+    display: flex;
+    justify-content: space-between;
+}
+.homeHead *{
+    margin: auto 0;
+}
+.btn{
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+}
+.btn:active{
+    background-color: rgb(0, 63, 0);
+}
+.timestamps{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.timestamps>p{
+    color: white;
+    padding: 5px 10px;
+    font-size: 10px;
+}
+@media (max-width: 768px) {
+    .todoCard {
+        flex: 1 1 calc(50% - 10px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .todoCard {
+        flex: 1 1 calc(100% - 10px); 
+    }
+}
